@@ -125,13 +125,13 @@ a:hover:after {
   background-color: black;
   color: white;
   font-size: 18px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease; /* creates an effect that doesn't make the transition seem too abrupt; a delay by a few ms*/
 }
 
 #connect-button:hover #connect-icon {
   background-color: white;          
   color: #1c92d2;
-  transform: translateX(4px);     
+  transform: translateX(4px); /* shifts the element horizontally by 4 pixels*/ 
 }
 
 #author-image {
@@ -140,7 +140,7 @@ a:hover:after {
 
 #author-image img {
     position: relative;
-    z-index: -1;
+    z-index: -1; /* allows elements to be positioned behind another element*/
 }
 
 .parent-container {
@@ -206,7 +206,7 @@ a:hover:after {
   color: #555;
 }
 
-.card a {
+.card a { 
   display: inline-block;
   margin-top: 12px;
   padding: 8px 16px;
@@ -217,7 +217,7 @@ a:hover:after {
   transition: background 0.3s;
 }
 
-.card a:hover {
+.card a:hover { /* dynamically changes background whenever mouse pointer hovers over the card */
   background: #0f6fa8;
 }
 
