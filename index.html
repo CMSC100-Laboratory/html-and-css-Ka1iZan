@@ -1,93 +1,49 @@
+<!--
+Author: Bien Gabriel J. Mainit
+Section: EF-1L
+Exercise 02
+
+REFERENCES:
+[1] https://stackoverflow.com/questions/66300987/how-do-i-change-the-font-colour-of-text-in-the-same-line-in-html5-without-using
+[2] https://codepen.io/jstn/pen/mdoOZJ
+-->
+
 <!DOCTYPE html>
 
 <html>
   <head>
     <title>Sample Web Page</title>
     <link rel="stylesheet" type="text/css" href="flex.css" />
-
   </head>
 
   <body>
-    
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> |
+    <header>
+        <div>
+            <p class="header-text">
+                <div class="icon-container">
+                    <span id="icon"> &#9881 </span>
+                </div>
+                <span id ="h1">Portfol.</span><span id ="h2">io</span>
         </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div> 
-    |   <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> |
+        <span>
+            <nav>
+                <ul class="nav-links">
+                    <li> <a href="#"> About me </a> </li>
+                    <li> <a href="#"> Skills </a> </li>
+                    <li> <a href="#"> Projects </a> </li>
+                </ul>
+            </nav>
+        </span>
+        <div id="connect-button">
+            <span>Connect</span>
+            <span id="connect-icon">&#10138;</span>
         </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
-    </div>
-    </nav>
+            </p>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
+     </header>
+
+
+
   </body>
 
 </html>

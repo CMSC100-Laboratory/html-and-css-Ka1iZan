@@ -1,28 +1,147 @@
-.flex-container {
+
+
+
+header {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.nav_bar {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+.header-text {
+  text-align: left;
+  margin-left: 10;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
-}
-.flex-item {
+.icon-container {
     border-style: solid;
     border-width: 2px;
-    border-color: red;
+    margin: 0;
+    padding: 0px;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    display: inline-block; 
 }
+
+#icon {
+    font-size: 50px;
+    color: azure;
+    text-align: left;
+    margin-left: 10;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#h1 {
+    font-size: 60px;
+    color: black;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#h2 {
+    font-size: 60px;
+    color: cornflowerblue;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    font-size: 25px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    text-underline-position: below;
+}
+
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#connect-button {  
+  display: inline-flex;              
+  align-items: center;              
+  gap: 10px;                         
+  padding: 12px 24px;               
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 30px;               
+  background: white;                 
+  cursor: pointer;                  
+  transition: all 0.3s ease;     
+}
+
+#connect-button:hover {
+  background: cornflowerblue;
+  color: white;
+  border-color: cornflowerblue;
+}
+
+#connect-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;               
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#connect-button:hover #connect-icon {
+  background-color: white;          
+  color: cornflowerblue;
+  transform: translateX(4px);     
+}
+
+
+
+
