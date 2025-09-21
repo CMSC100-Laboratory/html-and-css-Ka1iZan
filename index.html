@@ -6,6 +6,10 @@ Exercise 02
 REFERENCES:
 [1] https://stackoverflow.com/questions/66300987/how-do-i-change-the-font-colour-of-text-in-the-same-line-in-html5-without-using
 [2] https://codepen.io/jstn/pen/mdoOZJ
+[3] https://www.freecodecamp.org/news/learn-css-background-properties/
+[4] https://uigradients.com/#Telegram
+[5] https://www.w3schools.com/howto/howto_css_column_cards.asp
+[6] https://www.w3schools.com/cssref/pr_pos_z-index.php
 -->
 
 <!DOCTYPE html>
@@ -20,10 +24,7 @@ REFERENCES:
     <header>
         <div>
             <p class="header-text">
-                <div class="icon-container">
-                    <span id="icon"> &#9881 </span>
-                </div>
-                <span id ="h1">Portfol.</span><span id ="h2">io</span>
+                <span id="icon"> &#9881</span><span id ="h1">Portfol.</span><span id ="h2">io</span>
         </div>
         <span>
             <nav>
@@ -41,6 +42,47 @@ REFERENCES:
             </p>
 
      </header>
+     <div id="author-image">
+     <img src="Images/self_image.png" height="650px" width="500px">
+     </div>
+     <div class="parent-container">
+        <h1> About Me </h1>
+        <br>  
+        <p class="about-text"> Bien Gabriel J. Mainit is a junior computer science student at the University of the Philippines Los Baños. Hailing from the city of Pasig, 
+                               he completed his secondary education at Pasig City Science High School, graduating with high honors in junior, and honors in senior high school. 
+                               With a strong interest in data science and cybersecurity, Bien is actively building his skills through coursework and side-projects. More than 
+                               anything, Bien is passionate about leveraging technology to solve real-world problems, and is looking forward to grow within the field through 
+                               varying opportunities. Aside from programming, Bien has been part of several organizations such as the Elite Debate Society club and currently, 
+                               the UPLB Computer Science Society, serving as the latter’s MicroCOSSm’s Committee head. </p>
+        <br> <br>
+        <h1> Projects </h1>
+        <br>
+        <div class="projects">
+        <div class="card">
+            <h3>Project 1 | Super Auto Pets</h3>
+            <img src="Images/Project_1.png">
+            <p>A game project developed with Java and Java Fx. The models and mechanisms used within the game are heavily based on the steam game of the same title.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Project 2 | Batis</h3>
+            <img src="Images/Project_2.png">
+            <p>A web application designed for audit tracking of student organizations' funds, built with React for the frontend, Node.js and Express for the backend, and MariaDB for the database.</p>
+            <br>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3 id="">Project 3 | Travego</h3>
+            <img src="Images/Project_3.png">
+            <p> A travel-planning mobile application that hosts networking services for people with similar travelling interests. The application is developed using Google's Flutter with Firebase as its database. </p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+     </div>
+     
+
 
 
 
